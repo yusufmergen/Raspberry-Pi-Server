@@ -3,8 +3,11 @@
 $username = $_POST['username'];
 $password = $_POST['password'];
 
+$username = strip_tags($username);
+$password = strip_tags($password);
+
 $username = stripcslashes($username);
-$password = stripcslashes($passowrd);
+$password = stripcslashes($password);
 
 $username = mysql_real_escape_string($username);
 $password = mysql_real_escape_string($password);
