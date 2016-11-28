@@ -2,6 +2,6 @@
 
 session_start();
 session_destroy();
-header("Location : front.php");
+header("Location : index.php");
 
 ?> 

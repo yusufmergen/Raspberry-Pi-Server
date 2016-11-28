@@ -17,7 +17,7 @@ if(!$row = mysqli_fetch_assoc($result)){
 }else{
 	
 	$_SESSION['id'] = $row['id']; 
-	header("Location : index.php");
+	header("Location : main.php");
 }
 
 
